@@ -1,0 +1,28 @@
+page-visitas {
+    .form-info{
+        ion-item{
+            border: 1px solid;
+            border-radius: 7px;
+            border-color: #cacaca;
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn-save{
+        width: 100% !important;
+    }
+
+    .btn-photo{
+        width: 100% !important;
+        background: green;
+    }
+
+    ion-input{
+        font-size: 12px;
+    }
+
+    ion-textarea{
+        font-size: 12px;
+    }
+
+}

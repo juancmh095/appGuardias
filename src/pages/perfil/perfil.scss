@@ -1,0 +1,23 @@
+page-perfil {
+    .header-p{
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px !important;
+        max-height: 200px !important;
+        max-width: 358px !important;
+        margin: auto;
+        .photo{
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            img{
+                object-fit: contain;
+                border-radius: 100px !important;
+                border: 5px solid #379cff80;
+                width: 100%;
+    
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "guardiasApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Bienvenido
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="header-p">
+    <div class="photo">
+      <img src="https://ui-avatars.com/api/?background=ffffff&name={{info.usuario}}" alt="" srcset="">
+    </div>
+  </div>
+  <div class="menu-g mt-3">
+    <ion-grid>
+      <ion-row>
+        <ion-list class="m-0 list-info" lines="none">
+          <ion-item lines="none">
+            <ion-label class="list-label-info">
+              <h2>{{info.usuario}}</h2>
+              <h3>{{info.empresa}}</h3>
+              <p>{{info.suc}}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="goToPage('visita')">
+            <ion-card-header>
+              <ion-card-title><ion-icon name="people-outline"></ion-icon></ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Registrar Visita
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card (click)="goToPage('novedades')">
+            <ion-card-header>
+              <ion-card-title><strong><ion-icon name="list-outline"></ion-icon></strong></ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Reporte de novedades
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="goToPage('perfil')">
+            <ion-card-header>
+              <ion-card-title><ion-icon name="person-outline"></ion-icon></ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Perfil
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card (click)="goToPage('cerrar')">
+            <ion-card-header>
+              <ion-card-title><ion-icon name="alarm-outline"></ion-icon></ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Terminar Turno
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
